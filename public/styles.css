@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.app-container {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #9ca3fd;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.popup-btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50px;
+	border: none;
+}
+
+.popup-container {
+	height: 200px;
+	width: 600px;
+	background-color: #aaaa46;
+	overflow: auto;
+}
+
+.modal-content {
+	border: 1px solid #000000;
+	animation-name: animateModal;
+	animation-duration: 0.5s;
+}
+
+@keyframes animateModal {
+	from {
+		top: -200px;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.close-modal {
+	position: absolute;
+	top: 65px;
+	right: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.header {
+	background-color: #f3f353;
+	padding: 10px 0px;
+}
+
+.body {
+	position: relative;
+	top: 50px;
+	overflow: auto;
+}
